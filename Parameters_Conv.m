@@ -4,7 +4,7 @@
 %%% Convolutional code parameters %%%%%%%%%%%
 Nbits=1e5;     % Number of info bits per simulated block 
 K=4;           % Convolutional encoder constraint length 
-poly=[5,7];           %[13,15];   % [5,7];   % Set of polynomials defining convolutional encoder
+poly=[10,11];           %[13,15];   % [5,7];   % Set of polynomials defining convolutional encoder
 trellis=poly2trellis(K,poly,17);                        % Trellis structure
 r=size(poly,1)/size(poly,2);    % Convolutional code rate 
 tb=1e5;                         % Decoding window
